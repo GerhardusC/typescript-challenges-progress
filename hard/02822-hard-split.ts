@@ -21,7 +21,7 @@
 type Split<S extends string, SEP extends string> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type cases = [
   Expect<Equal<Split<'Hi! How are you?'>, ['Hi! How are you?']>>,

@@ -35,7 +35,7 @@
 declare function join(delimiter: any): (...parts: any[]) => any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 // Edge cases
 const noCharsOutput = join('-')()

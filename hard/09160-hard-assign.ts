@@ -63,7 +63,7 @@
 type Assign<T extends Record<string, unknown>, U> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 // case1
 type Case1Target = {}

@@ -44,7 +44,7 @@ type DeepReadonly<T> = {
 
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type cases = [
   Expect<Equal<DeepReadonly<X1>, Expected1>>,

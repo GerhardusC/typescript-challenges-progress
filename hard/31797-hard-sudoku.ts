@@ -16,7 +16,7 @@ type Digits = 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9
 type SudokuSolved = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type test_sudoku_1_actual = SudokuSolved<[
   [[1, 2, 3], [5, 6, 7], [4, 8, 9]],

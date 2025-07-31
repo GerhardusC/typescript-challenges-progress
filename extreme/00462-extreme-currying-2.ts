@@ -41,7 +41,7 @@
 declare function DynamicParamsCurrying(fn: any): any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 const curried1 = DynamicParamsCurrying((a: string, b: number, c: boolean) => true)
 const curried2 = DynamicParamsCurrying((a: string, b: number, c: boolean, d: boolean, e: boolean, f: string, g: boolean) => true)

@@ -28,7 +28,7 @@
 type Multiply<A extends string | number | bigint, B extends string | number | bigint> = string
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type cases = [
   Expect<Equal<Multiply<2, 3>, '6'>>,

@@ -21,7 +21,7 @@
 type DropChar<S, C> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type cases = [
   // @ts-expect-error

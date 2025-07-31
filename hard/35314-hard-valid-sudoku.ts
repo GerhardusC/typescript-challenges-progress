@@ -30,7 +30,7 @@
 type ValidSudoku<M extends number[][]> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type Matrix0 = [
   [9, 5, 7, 8, 4, 6, 1, 3, 2],

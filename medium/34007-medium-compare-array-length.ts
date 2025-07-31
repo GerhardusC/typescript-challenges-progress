@@ -19,7 +19,7 @@
 type CompareArrayLength<T extends any[], U extends any[]> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type cases = [
   Expect<Equal<CompareArrayLength<[1, 2, 3, 4], [5, 6]>, 1>>,

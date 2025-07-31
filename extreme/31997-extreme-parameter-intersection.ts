@@ -46,7 +46,7 @@ type IntersectParameters<
 > = l & r
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type result1 = IntersectParameters<[], []>
 type TwoEmpty = Expect<Equal<[], result1>>

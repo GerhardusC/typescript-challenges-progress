@@ -15,7 +15,7 @@
 type IsOdd<T extends number> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type cases = [
   Expect<Equal<IsOdd<5>, true>>,

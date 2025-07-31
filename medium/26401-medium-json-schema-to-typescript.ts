@@ -20,7 +20,7 @@
 type JSONSchema2TS<T> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 // + Primitive types
 type Type1 = JSONSchema2TS<{

@@ -23,7 +23,7 @@
 type StartsWith<T extends string, U extends string> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type cases = [
   Expect<Equal<StartsWith<'abc', 'ac'>, false>>,

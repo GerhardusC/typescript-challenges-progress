@@ -49,7 +49,7 @@
 declare function SimpleVue(options: any): any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 SimpleVue({
   data() {

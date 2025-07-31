@@ -48,7 +48,7 @@
 type ReplaceKeys<U, T, Y> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type NodeA = {
   type: 'A'

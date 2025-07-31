@@ -21,7 +21,7 @@
 type TupleToNestedObject<T, U> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type cases = [
   Expect<Equal<TupleToNestedObject<['a'], string>, { a: string }>>,

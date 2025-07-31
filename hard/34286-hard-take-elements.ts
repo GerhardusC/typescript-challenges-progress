@@ -25,7 +25,7 @@
 type Take<N, Arr> = Arr
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type cases = [
   Expect<Equal<Take<2, [1, 2, 3]>, [1, 2]>>,

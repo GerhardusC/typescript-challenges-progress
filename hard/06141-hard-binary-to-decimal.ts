@@ -21,7 +21,7 @@
 type BinaryToDecimal<S extends string> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type cases = [
   Expect<Equal<BinaryToDecimal<'10'>, 2>>,
