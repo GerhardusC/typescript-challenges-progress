@@ -24,7 +24,7 @@ type MyParameters<T extends (...args: any[]) => any> =
   T extends (...args: infer X) => any ? [...X] : never;
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 function foo(arg1: string, arg2: number): void {}
 function bar(arg1: boolean, arg2: { a: 'A' }): void {}

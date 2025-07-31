@@ -25,7 +25,7 @@
 type First<T extends any[]> = T[number] extends never ? never : T[0];
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect } from '@type-challenges/utils'
+import type { Equal, Expect } from '../type-challenges'
 
 type cases = [
   Expect<Equal<First<[3, 2, 1]>, 3>>,
