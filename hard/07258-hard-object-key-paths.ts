@@ -24,7 +24,7 @@
 type ObjectKeyPaths<T extends object> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect, ExpectExtends } from '@type-challenges/utils'
+import type { Equal, Expect, ExpectExtends } from '../type-challenges'
 
 const ref = {
   count: 1,

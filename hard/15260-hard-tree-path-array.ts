@@ -41,7 +41,7 @@
 type Path<T> = any
 
 /* _____________ Test Cases _____________ */
-import type { ExpectExtends, ExpectFalse, ExpectTrue } from '@type-challenges/utils'
+import type { ExpectExtends, ExpectFalse, ExpectTrue } from '../type-challenges'
 
 declare const example: {
   foo: {

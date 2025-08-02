@@ -51,7 +51,7 @@
 declare function VueBasicProps(options: any): any
 
 /* _____________ Test Cases _____________ */
-import type { Debug, Equal, Expect, IsAny } from '@type-challenges/utils'
+import type { Debug, Equal, Expect, IsAny } from '../type-challenges'
 
 class ClassA {}
 

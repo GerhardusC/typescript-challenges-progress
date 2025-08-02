@@ -33,7 +33,7 @@ function uniqueItems(items: any[]) {
 }
 
 /* _____________ Test Cases _____________ */
-import type { Equal } from '@type-challenges/utils'
+import type { Equal } from '../type-challenges'
 
 declare const readonlyEqual: <A>() => <T>(value: T) => Equal<Readonly<A>, Readonly<T>>
 declare const expect: (value: true) => void

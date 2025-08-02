@@ -53,7 +53,7 @@ type MyReadonly2<T, K extends keyof T = never> =
 //   Readonly<Pick<T, K>>;
 
 /* _____________ Test Cases _____________ */
-import type { Alike, Expect } from '@type-challenges/utils'
+import type { Alike, Expect } from '../type-challenges'
 
 type cases = [
   Expect<Alike<MyReadonly2<Todo1>, Readonly<Todo1>>>,

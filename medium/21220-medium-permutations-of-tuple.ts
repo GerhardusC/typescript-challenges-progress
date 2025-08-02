@@ -28,7 +28,7 @@
 type PermutationsOfTuple<T extends unknown[]> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect, ExpectFalse } from '@type-challenges/utils'
+import type { Equal, Expect, ExpectFalse } from '../type-challenges'
 
 type cases = [
   Expect<Equal<PermutationsOfTuple<[]>, []>>,

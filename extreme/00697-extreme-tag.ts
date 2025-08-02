@@ -99,7 +99,7 @@ type HasTags<B, T extends readonly string[]> = any
 type HasExactTags<B, T extends readonly string[]> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, Expect, IsTrue } from '@type-challenges/utils'
+import type { Equal, Expect, IsTrue } from '../type-challenges'
 
 /**
  * Tests of assignable of tagged variables.

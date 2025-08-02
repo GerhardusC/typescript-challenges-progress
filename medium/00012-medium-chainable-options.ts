@@ -48,7 +48,7 @@ type Chainable<Builder = {}> = {
   get(): Builder;
 }
 /* _____________ Test Cases _____________ */
-import type { Alike, Expect } from '@type-challenges/utils'
+import type { Alike, Expect } from '../type-challenges'
 
 declare const a: Chainable
 

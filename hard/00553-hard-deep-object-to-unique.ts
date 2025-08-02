@@ -41,7 +41,7 @@
 type DeepObjectToUniq<O extends object> = any
 
 /* _____________ Test Cases _____________ */
-import type { Equal, IsFalse, IsTrue } from '@type-challenges/utils'
+import type { Equal, IsFalse, IsTrue } from '../type-challenges'
 
 type Quz = { quz: 4 }
 
