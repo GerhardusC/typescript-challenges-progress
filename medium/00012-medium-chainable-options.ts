@@ -39,13 +39,11 @@
 
 /* _____________ Your Code Here _____________ */
 
-type Chainable<Builder = {}> = {
-  option(key: string, value: any): any extends
-    (key: infer K, value: infer L) => any
-      ? Chainable<Builder & {[X in K as string]: L}>
-      : never;
-
-  get(): Builder;
+type Chainable<B = {}> = {
+  option<K extends string, V>(
+    key: K extends keyof B ? never : K, value: V
+  ): Chainable<B & Record<K, V>>
+  get(): B;
 }
 /* _____________ Test Cases _____________ */
 import type { Alike, Expect } from '../type-challenges'
