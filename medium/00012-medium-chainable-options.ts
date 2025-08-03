@@ -42,7 +42,7 @@
 type Chainable<B = {}> = {
   option<K extends string, V>(
     key: K extends keyof B ? never : K, value: V
-  ): Chainable<B & Record<K, V>>
+  ): Chainable<B & { [X in K]: V }>
   get(): B;
 }
 /* _____________ Test Cases _____________ */
