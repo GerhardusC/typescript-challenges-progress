@@ -24,10 +24,12 @@
 
 /* _____________ Your Code Here _____________ */
 
-type Last<T extends any[]> = any
+type Last<T extends any[]> = [never, ...T[number]][T['length']];
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '../type-challenges'
+
+type item = Last<[0, 1, 2]>;
 
 type cases = [
   Expect<Equal<Last<[]>, never>>,
