@@ -23,10 +23,9 @@
 
 /* _____________ Your Code Here _____________ */
 
-declare function PromiseAll<T>(values: T): T extends readonly [...infer K] ?
-  Promise<{
-    [X in keyof K]: Awaited<K[X]>;
-  }> : never;
+declare function PromiseAll<T extends any[]>(values: readonly [...T]): Promise<{
+    [X in keyof T]: Awaited<T[X]>;
+  }>;
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '../type-challenges'
