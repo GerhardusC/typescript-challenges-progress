@@ -23,7 +23,10 @@
 
 /* _____________ Your Code Here _____________ */
 
-declare function PromiseAll(values: any): any
+declare function PromiseAll<T>(values: T): T extends readonly [...infer K] ?
+  Promise<{
+    [X in keyof K]: Awaited<K[X]>;
+  }> : never;
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '../type-challenges'
